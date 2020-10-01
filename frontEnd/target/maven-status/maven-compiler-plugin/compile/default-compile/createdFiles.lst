@@ -1,0 +1,4 @@
+frontend\resource\PersonResource.class
+frontend\model\Person.class
+frontend\FrontEndApplication.class
+frontend\service\PersonService.class

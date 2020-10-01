@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <title>Lista de Pessoas</title>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div id="listaDePessoas">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                        </tr>
+                    </thead>
+                    <tr th:each="person : ${persons}">
+                        <td> <span th:text="${person.id}"></span> </td>
+                        <td> <span th:text="${person.name}"></span> </td>
+                        <td> <span th:text="${person.age}"></span> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
